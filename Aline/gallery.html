@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | FitZone Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+    /* Gallery Section Styles */
+
+.gallery {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: center;
+}
+
+.gallery h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gallery p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+
+.gallery-item {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+ .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+ .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="portifolio.html">Classes</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h1>Our Gallery</h1>
+            <p>Take a look at our state-of-the-art facilities and our members in action!</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Gallery Image 6">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 FitZone Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>

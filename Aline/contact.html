@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FitZone Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">/* Contact Section Styles */
+
+.contact {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact input,.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.contact-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+ .contact form {
+    padding: 10px;
+  }
+ .contact label {
+    font-size: 14px;
+  }
+ .contact input,.contact textarea {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+ .contact form {
+    padding: 5px;
+  }
+ .contact label {
+    font-size: 12px;
+  }
+ .contact input,.contact textarea {
+    padding: 5px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="portifolio.html">Classes</a></li>
+                <li><a href="contact.html" class="active">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contact Section -->
+        <section class="contact">
+            <h1>Get in Touch</h1>
+            <p>Have a question or want to learn more about our gym? Fill out the form below and we'll get back to you soon!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send Message">
+            </form>
+            <div class="contact-info">
+                <h2>Address:</h2>
+                <p>12 KG St, Kigali, Rwanda 12345</p>
+                <h2>Phone:</h2>
+                <p>(250) 7878787878</p>
+                <h2>Email:</h2>
+                <p><a href="mailto:info@fitzonegym.com">info@fitzonegym.com</a></p>
+                <h2>Hours:</h2>
+                <p>Monday - Thursday: 5am - 10pm<br>
+                Friday: 5am - 9pm<br>
+                Saturday: 8am - 6pm<br>
+                Sunday: 8am - 6pm</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 FitZone Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
